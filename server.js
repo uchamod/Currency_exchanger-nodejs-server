@@ -10,10 +10,10 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
-
+const port = process.env.PORT || 5000;
 //source
 app.use("/exchanges/", exchanges);
 
-app.listen(5000, () => {
+app.listen(port, () => {
   console.log("server start at port 5000");
 });
