@@ -1,0 +1,9 @@
+{
+  "require": ["@babel/register"],
+  "extension": ["js"],
+  "spec": "./test/test.js",
+  "timeout": 5000,
+  "ui": "bdd",
+  "watch": true,
+  "type": "module"
+}
