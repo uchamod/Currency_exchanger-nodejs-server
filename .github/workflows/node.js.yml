@@ -33,3 +33,4 @@ jobs:
         echo "${{ secrets.API_KEY }}" > .env
         echo "${{ secrets.PORT }}" > .env
     - run: npm test
+    - run: pm2 restart exchanges
